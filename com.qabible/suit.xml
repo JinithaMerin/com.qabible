@@ -1,0 +1,28 @@
+<suite name="qabiblesuit">
+	<!--
+	<test name="Login">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testCases.LoginTestCase">
+
+			</class>
+		</classes>
+	</test>
+	<test name="Worker">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testCases.WorkersTestCases">
+
+			</class>
+		</classes>
+	</test>
+	-->
+	<test name="Client">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testCases.ClientsTestCases">
+
+			</class>
+		</classes>
+	</test>
+</suite>
