@@ -37,8 +37,8 @@ public class ClientsTestCases extends BaseClass
 		Assert.assertEquals(actual,expected,"user invalid");
 	}
 	
-	@Test
-	public void verifySearchOptionInClientPage() 
+	@Test(enabled=true)
+	public void verifySearchOptionInClientPage() throws InterruptedException 
 	{
 		LoginPage lp = new LoginPage(driver);
 		lp.enterUsername("carol");
