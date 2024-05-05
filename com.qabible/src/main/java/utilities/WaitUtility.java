@@ -17,8 +17,9 @@ public class WaitUtility
 
 	}
 	
-	public void AlertToBePresent()
+	public void AlertToBePresent(String path,WebDriver driver)
 	{
-		
+		WebDriverWait webdriverwaitobj = new WebDriverWait(driver,Duration.ofSeconds(10));
+		webdriverwaitobj.until(ExpectedConditions.alertIsPresent());
 	}
 }

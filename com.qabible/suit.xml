@@ -1,26 +1,36 @@
-<suite name="qabiblesuit">
-	<!--
+<suite name="qabiblesuit" parallel="tests" thread-count="2">
+
 	<test name="Login">
-		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="browser" value="Edge"></parameter>
 		<classes>
 			<class name="testCases.LoginTestCase">
 
 			</class>
 		</classes>
 	</test>
+	
 	<test name="Worker">
-		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="browser" value="Edge"></parameter>
 		<classes>
 			<class name="testCases.WorkersTestCases">
 
 			</class>
 		</classes>
 	</test>
-	-->
+	
 	<test name="Client">
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 			<class name="testCases.ClientsTestCases">
+
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Deduction">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testCases.DeductionTestCases">
 
 			</class>
 		</classes>

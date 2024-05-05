@@ -9,7 +9,7 @@ import elementRepository.LoginPage;
 
 public class ClientsTestCases extends BaseClass
 {
-	@Test(enabled=false)
+	@Test
 	public void verifyClientNameWithId() 
 	{
 		LoginPage lp = new LoginPage(driver);
@@ -23,7 +23,7 @@ public class ClientsTestCases extends BaseClass
 		Assert.assertEquals(actual,expected,"user invalid");
 	}
 	
-	@Test(enabled=false)
+	@Test(retryAnalyzer = retry.Retry.class)
 	public void verifyClientNameWithId_withoutUtility() 
 	{
 		LoginPage lp = new LoginPage(driver);
@@ -37,7 +37,7 @@ public class ClientsTestCases extends BaseClass
 		Assert.assertEquals(actual,expected,"user invalid");
 	}
 	
-	@Test(enabled=true)
+	@Test(retryAnalyzer = retry.Retry.class)
 	public void verifySearchOptionInClientPage() throws InterruptedException 
 	{
 		LoginPage lp = new LoginPage(driver);

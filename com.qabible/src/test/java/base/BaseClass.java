@@ -17,7 +17,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 
-public class BaseClass {
+public class BaseClass 
+{
 	public WebDriver driver;
 	public static Properties prop;
 

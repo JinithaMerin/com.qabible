@@ -1,5 +1,4 @@
 package elementRepository;
-
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -41,9 +40,10 @@ public class ClientsPage
 		clientsButton.click();
 	}
 	
-	public void searchButtonClick()
+	public void searchButtonClick() throws InterruptedException
 	{
 		searchButton.click();
+		Thread.sleep(3000);
 	}
 	
 	public void enterClientIdToSearch(String id) 

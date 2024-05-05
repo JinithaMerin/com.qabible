@@ -9,6 +9,11 @@ import org.openqa.selenium.support.ui.Select;
 
 public class GeneralUtilities 
 {
+	public void buttonClick(WebElement element)
+	{
+		element.click();
+	}
+	
 	public String getTextForAnElement(WebElement element)
 	{
 		String text=element.getText();
